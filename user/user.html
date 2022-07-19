@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+      .uContainer {
+        padding: 0% 8%;
+        margin-top: 20px;
+        font-family: "Roboto", sans-serif !important;
+        color: #393838;
+        display: flex;
+        flex-direction: column;
+      }
+      .ordTable {
+        width: 100%;
+      }
+      .ucolumn1 {
+        width: 8%;
+        text-align: start;
+      }
+      .ucolumn2,
+      .ucolumn4 {
+        width: 15%;
+        text-align: start;
+      }
+      .ucolumn3,
+      .ucolumn6 {
+        width: 25%;
+        text-align: start;
+      }
+      .ucolumn5 {
+        width: 12%;
+        text-align: start;
+      }
+      tbody tr .ucolumn4 {
+        color: #393838;
+      }
+      tr {
+        height: 50px;
+      }
+      td {
+        padding-left: 10px;
+        color: #8c8c8c;
+      }
+      .user-form {
+        width: 700px;
+        margin-bottom: 48px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 48px;
+      }
+      .user-input {
+        width: calc(100% - 100px);
+        border: 0;
+        margin: 0 36px 0 0;
+        padding: 12px 24px;
+        font-size: 15px;
+        border: 0;
+        border-bottom: 2px solid #8c8c8c;
+        margin: 0 36px 0 0;
+        outline: none;
+      }
+      .user-button {
+        display: inline-block;
+        padding: 14px 36px;
+        border-radius: 30px;
+        padding: 14px 36px;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        background-color: #20b883;
+        color: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        width: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div>
+          <img
+            src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+            alt=""
+          />
+        </div>
+        <div><span class="logoSpan">Kafene</span></div>
+      </div>
+      <div class="menus">
+        <div class="menuitem1"><a href="../order/order.html">Orders</a></div>
+        <div class="menuitem2">
+          <a href="../product/product.html">Products</a>
+        </div>
+        <div class="menuitem3"><a href="user.html">Users</a></div>
+      </div>
+      <a href="../login.html"
+        ><div class="logout" onclick="logOut()">Logout</div></a
+      >
+    </header>
+    <div class="uContainer">
+      <h1>Users</h1>
+      <form action="" class="user-form">
+        <input type="search" class="user-input" placeholder="Search by Name" />
+        <input type="reset" class="user-button" value="Search" />
+      </form>
+
+      <div class="ordTable">
+        <table>
+          <thead>
+            <tr>
+              <th class="ucolumn1">ID</th>
+              <th class="ucolumn2">User Avatar</th>
+              <th class="ucolumn3">Full Name</th>
+              <th class="ucolumn4">DoB</th>
+              <th class="ucolumn5">Gender</th>
+              <th class="ucolumn6">Current Location</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="user.js"></script>
+  </body>
+</html>

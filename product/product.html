@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+      .pcolumn1,
+      .pcolumn5 {
+        width: 10%;
+        text-align: start;
+      }
+      .pcolumn2 {
+        width: 22%;
+        text-align: start;
+      }
+      .pcolumn3 {
+        width: 36%;
+        text-align: start;
+      }
+      .pcolumn4 {
+        width: 13%;
+        text-align: start;
+      }
+      .pcolumn6 {
+        width: 9%;
+        text-align: start;
+      }
+      tbody tr .pcolumn1,
+      tbody tr .pcolumn3,
+      tbody tr .pcolumn5 {
+        color: #8c8c8c;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div>
+          <img
+            src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+            alt=""
+          />
+        </div>
+        <div><span class="logoSpan">Kafene</span></div>
+      </div>
+      <div class="menus">
+        <a href="../order/order.html"> <div class="menuitem1">Orders</div></a>
+        <a href="product.html"> <div class="menuitem2">Products</div></a>
+        <a href="../user/user.html"><div class="menuitem3">Users</div></a>
+      </div>
+      <a href="../login.html"
+        ><div class="logout" onclick="logOut()">Logout</div></a
+      >
+    </header>
+    <div class="ordContainer">
+      <h1>Products</h1>
+      <div class="ordercontain">
+        <div class="ordFilter">
+          <h4>Filters</h4>
+          <p></p>
+          <div class="ofiltrs">
+            <input type="checkbox" id="chek1" name="new" checked /><label
+              for="chek1"
+              >Expired</label
+            >
+          </div>
+          <div class="ofiltrs">
+            <input type="checkbox" id="chek2" name="packed" checked /><label
+              for="chek2"
+              >Low Stocks</label
+            >
+          </div>
+        </div>
+        <div class="ordTable">
+          <table>
+            <thead>
+              <tr>
+                <th class="pcolumn1">ID</th>
+                <th class="pcolumn2">Product Name</th>
+                <th class="pcolumn3">Product Brand</th>
+                <th class="pcolumn4">Expiry Date</th>
+                <th class="pcolumn5">Unit Price</th>
+                <th class="pcolumn6">Stock</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="product.js"></script>
+  </body>
+</html>

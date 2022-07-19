@@ -1,0 +1,170 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #f6f7fb;
+}
+header {
+  padding: 0px 4%;
+  box-shadow: 0px 2px 5px#ccc;
+  display: flex;
+  height: 60px;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+}
+.logo img {
+  width: 24px;
+  height: 28px;
+  margin-right: 8px;
+}
+.logo {
+  width: 13%;
+  display: flex;
+  align-items: center;
+}
+.logoSpan {
+  font-size: 24px;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+.menus {
+  width: 82%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.menuitem1,
+.menuitem2,
+.menuitem3 {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 24px 0px 16px;
+  color: rgba(56, 55, 55, 0.8);
+  letter-spacing: 0.6px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0px 15px;
+}
+.activeMenu {
+  color: #20b883;
+  border-bottom: 3px solid #20b883;
+}
+.logout {
+  width: 5%;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 16px;
+  color: rgba(68, 68, 68, 0.8);
+  letter-spacing: 0.6px;
+}
+/* .................................................header end............................................. */
+
+/* ...............................................style for order.html......................................................... */
+.ordContainer {
+  padding: 0% 8% 4%;
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif !important;
+  color: #393838;
+}
+.ordercontain {
+  display: flex;
+}
+.ordFilter {
+  width: 14%;
+}
+.ordFilter h4 {
+  margin-top: 0px;
+}
+.ofiltrs {
+  margin: 12px 0px;
+}
+.column1 {
+  width: 16%;
+  text-align: start;
+  padding-left: 10px;
+}
+.column2 {
+  width: 36%;
+  text-align: start;
+  padding-left: 10px;
+}
+tbody tr .column1,
+tbody tr .column4 {
+  color: #8c8c8c;
+}
+
+.column3,
+.column4,
+.column5 {
+  width: 16%;
+  text-align: start;
+  padding-left: 10px;
+}
+thead {
+  vertical-align: middle;
+}
+tbody tr {
+  background-color: white;
+  margin: 5px opx;
+  display: table-row;
+  border-bottom: 6px solid #f6f7fb;
+  height: 65px;
+}
+th,
+td {
+  padding: 14px;
+}
+.ordTable {
+  width: 90%;
+}
+.ordTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.ordtime {
+  font-size: 0.8rem;
+  margin-top: 3px;
+  font-weight: 700;
+  color: #8c8c8c;
+}
+/* $(".user-button").click(() => {
+  // let temp = $(".user-button").val();
+  let searchValue = $(".user-input").val().toLowerCase();
+  if (searchValue.length == 0) {
+    showAllData();
+  } else if (searchValue.length == 1) {
+    alert("Please Enter At Least 2 Character");
+    console.log(searchValue);
+  } else {
+    hideSomeData(searchValue);
+  }
+}); */
+/* ................ */
+/* 
+function showAllData() {
+  $(`.user${id}`).parent().show();
+  $(".user-button").val("Search");
+}
+function hideSomeData(searchValue) {
+  console.log("ala ka re ba");
+
+  // $("tbody tr").each(() => {
+  //   console.log("ala ka re ba ith");
+
+  let str = $(`.user${id}`).text().toLowerCase();
+  if (str.indexOf(searchValue) != -1) {
+    $(`.user${id}`).parent().show();
+    console.log(id, str);
+  } else {
+    $(`.user${id}`).parent().hide();
+    console.log(id, searchValue);
+  }
+  $(".user-button").val("Reset");
+  // });
+} */

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+      .loginForm {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 6px;
+        background-color: #fff;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding: 32px;
+        box-sizing: border-box;
+      }
+      .loinForm h1 {
+        letter-spacing: 1px;
+        font-weight: 500;
+        margin: 0 0 24px;
+      }
+      .inpfield {
+        width: 100%;
+        padding-top: 16px;
+        font-size: 14px;
+        box-sizing: border-box;
+        border: 0;
+        border-bottom: 2px solid #8c8c8c;
+        margin-bottom: 16px;
+        outline: none;
+      }
+      .frmButton {
+        width: 100%;
+
+        border-radius: 30px;
+        padding: 14px 36px;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        background-color: #20b883;
+        color: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-top: 24px;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div>
+          <img
+            src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+            alt=""
+          />
+        </div>
+        <div><span class="logoSpan">Kafene</span></div>
+      </div>
+      <div class="menus">
+        <a href=""> <div class="menuitem1">Orders</div></a>
+        <a href="#product"> <div class="menuitem2">Products</div></a>
+        <a href="#user"><div class="menuitem3">Users</div></a>
+      </div>
+      <!-- <div class="logout">Logout</div> -->
+    </header>
+    <div class="loginForm">
+      <form action="" method="POST">
+        <h1>Sign In</h1>
+
+        <input
+          class="inpfield"
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter Username"
+        />
+        <input
+          class="inpfield"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter Password"
+        />
+        <input
+          class="frmButton"
+          onclick="return subData()"
+          type="submit"
+          value="Login"
+        />
+      </form>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
